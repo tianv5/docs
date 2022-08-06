@@ -25,7 +25,6 @@ jobs:
 
     - name: generate _book folder
       run: |
-        book sm
         gitbook build
         cp SUMMARY.md _book
 
@@ -34,14 +33,14 @@ jobs:
         TOKEN: ${{ secrets.TOKEN }}
         REF: github.com/tianv5/docs.git
         MYEMAIL: 798262113@qq.com                  # ！！记得修改为自己github设置的邮箱
-        MYNAME: ${{github.repository_owner}}
+        MYNAME: tianv5
       run: |
         cd _book
-        git config --global user.email "${MYEMAIL}"
-        git config --global user.name "${MYNAME}"
+        git config --global user.email 798262113@qq.com
+        git config --global user.name tianv5
         git init
-        git remote add origin https://${REF}
+        git remote add origin https://github.com/tianv5/docs.git
         git add .
         git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
         git branch -M main
-        git push --force --quiet "https://${TOKEN}@github.com/tianv5/docs.git" main:gh-pages
+        git push --force --quiet "https://tianv5:${TOKEN}@github.com/tianv5/docs.git" main:gh-pages
