@@ -1,5 +1,5 @@
 module.exports = {
-    "title": "docs",
+    "title": "我的文档",
     "author": "tianv5",
     "description": "文档",
     "keywords": "学习,笔记,编程,代码,博客,文章,github",
@@ -51,7 +51,12 @@ module.exports = {
             "copyLines": false,
             "hide-elements": [
                 ".summary .gitbook-link"
-            ]
+            ],
+            "flexible-linkcard": {
+                "title": "Converts blockquotes into beautiful linkcard, custom nice links",
+                "hrefUrl": "https://github.com/HaoqiangChen/hqbook",
+                "imgSrc": "images/home/logo.png"
+            }
         },
         "sitemap": {
             "hostname": "https://tianv5.github.io/docs"
