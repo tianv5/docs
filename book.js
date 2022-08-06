@@ -57,9 +57,7 @@ module.exports = {
             "flexible-linkcard": {
                 "title": "docs",
                 "hrefUrl": "https://github.com/tianv5/docs",
-                "target": "_blank",
                 "imgSrc": "../../images/home/logo.png",
-                "imgClass": "rect"
             }
         },
         "sitemap": {
