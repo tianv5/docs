@@ -48,14 +48,18 @@ module.exports = {
     "pluginsConfig": {
         "chapter-fold": {},
         "theme-hqbook": {
-            "copyLines": false,
+            "favicon": "./images/home/favicon.ico",
+            "logo": "./images/home/logo.png",
+            "copyLines": true,
             "hide-elements": [
                 ".summary .gitbook-link"
             ],
             "flexible-linkcard": {
-                "title": "Converts blockquotes into beautiful linkcard, custom nice links",
-                "hrefUrl": "https://github.com/HaoqiangChen/hqbook",
-                "imgSrc": "images/home/logo.png"
+                "title": "docs",
+                "hrefUrl": "https://github.com/tianv5/docs",
+                "target": "_blank",
+                "imgSrc": "./images/home/logo.png",
+                "imgClass": "rect"
             }
         },
         "sitemap": {
