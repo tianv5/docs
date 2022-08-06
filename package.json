@@ -1,0 +1,25 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianv5/docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tianv5/docs/issues"
+  },
+  "homepage": "https://github.com/tianv5/docs#readme",
+  "dependencies": {
+    "gitbook-plugin-chapter-fold": "0.0.4",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-sitemap": "^1.2.0",
+    "gitbook-plugin-theme-hqbook": "^1.1.0"
+  }
+}

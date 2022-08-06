@@ -20,8 +20,10 @@ jobs:
     - name: configue gitbook
       run: |
         npm install -g gitbook-cli
-        gitbook install
-        npm install -g gitbook-summary
+        npm install gitbook-plugin-search-pro
+        npm install gitbook-plugin-chapter-fold
+        npm install gitbook-plugin-sitemap
+        npm install gitbook-plugin-theme-hqbook
 
     - name: generate _book folder
       run: |
