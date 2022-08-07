@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/tianv5/docs#readme",
   "dependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
     "gitbook-plugin-chapter-fold": "0.0.4",
+    "gitbook-plugin-code": "^0.1.0",
     "gitbook-plugin-search-pro": "^2.0.2",
     "gitbook-plugin-sitemap": "^1.2.0",
-    "gitbook-plugin-theme-hqbook": "^1.1.0"
+    "gitbook-plugin-theme-lou": "^1.0.3"
   }
 }

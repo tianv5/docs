@@ -1,7 +1,6 @@
 # Summary
 
 ## 简介
-* [前言](books/index/index.md)
 
 ## 中间件
 * [ElasticSearch](books/elk/README.md)

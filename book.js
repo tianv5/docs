@@ -5,31 +5,17 @@ module.exports = {
     "keywords": "学习,笔记,编程,代码,博客,文章,github",
     "introduction": {
         "path": "README.md",
-        "title": "docs"
+        "title": "前言",
     },
     "variables": {
         "themeColor": "#3884ff",
-        "themeHqbook": {
+        "themeLou": {
+            // 顶部导航栏配置
             "nav": [
                 {
-                    "url": "https://www.baidu.com",
-                    "target": "_blank",
-                    "name": "百度一下"
-                },
-                {
-                    "url": "https://jsrun.net/",
-                    "target": "_blank",
-                    "name": "JSRUN"
-                },
-                {
-                    "url": "https://www.runoob.com/",
-                    "target": "_blank",
-                    "name": "菜鸟教程"
-                },
-                {
-                    "url": "https://www.atool99.com/",
-                    "target": "_blank",
-                    "name": "ATOOL在线工具"
+                    "target": "_blank", // 跳转方式: 打开新页面
+                    "url": "https://www.baidu.com",  // 跳转页面
+                    "name": "百度"  // 导航名称
                 }
             ]
         }
@@ -39,42 +25,56 @@ module.exports = {
         "-lunr",
         "-search",
         "-sharing",
+        "-livereload",
         "search-pro",
         "chapter-fold",
         "sitemap",
-        "theme-hqbook",
-
+        "theme-lou",
+        "back-to-top-button",
+        "code"
     ],
     "pluginsConfig": {
         "chapter-fold": {},
-        "theme-hqbook": {
-            "favicon": "./images/home/favicon.ico",
-            "logo": "./images/home/logo.png",
-            "copyLines": true,
-            "hide-elements": [
-                ".summary .gitbook-link"
-            ],
-            "flexible-linkcard": {
-                "title": "docs",
-                "hrefUrl": "https://github.com/tianv5/docs",
-                "imgSrc": "../../images/home/logo.png",
+        "theme-lou": {
+            "color": "#FF4848", // 主题色
+            "favicon": "static/favicon.ico", // favicon图标
+            "logo": "static/logo.png", // 顶部左侧图标
+            "forbidCopy": false, // 页面是否禁止复制
+            "search-placeholder": "搜索", // 搜索框默认文本
+            "book-summary-title": "导航", // 目录标题
+            "book-anchor-title": "本章目录标题", // 本章目录标题
+            "hide-elements": [".summary .gitbook-link"],
+            "imgStyle": {
+                "isCenter": true, // 是否居中(默认为true)
+                "isBox": false, // 是否有边框(默认为true)
+                "otherStyle": 'max-width: 80%;', // 图片其他自定义CSS样式
             }
         },
         "sitemap": {
             "hostname": "https://tianv5.github.io/docs"
         }
     },
-    "pdf": {
-        "toc": true,
-        "pageNumbers": true,
-        "fontSize": 12,
-        "paperSize": "a4",
-        "margin": {
-            "right": 62,
-            "left": 62,
-            "top": 36,
-            "bottom": 36
+    "pdf":
+        {
+            "toc":
+                true,
+            "pageNumbers":
+                true,
+            "fontSize":
+                12,
+            "paperSize":
+                "a4",
+            "margin":
+                {
+                    "right":
+                        62,
+                    "left":
+                        62,
+                    "top":
+                        36,
+                    "bottom":
+                        36
+                }
         }
-    }
 }
 ;
