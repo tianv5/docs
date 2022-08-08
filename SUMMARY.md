@@ -9,5 +9,5 @@
 ## 其他
 * [github pages](books/github_pages/README.md)
     * [gitbook使用](books/github_pages/gitbook.md)
-    * [github Actions自动构建](books/github_pages/GitHub%20Actions.md)
+    * [github Actions自动构建](books/github_pages/GitHubActions.md)
 
