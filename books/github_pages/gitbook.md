@@ -205,6 +205,9 @@ package-lock.json
 
 ## Summary.md
 
+> 目录和文件不要有空格等特殊符号
+> 不然目录跳转容易有问题
+
 ```
 # Summary
 
