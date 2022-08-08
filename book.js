@@ -31,16 +31,17 @@ module.exports = {
         "sitemap",
         "theme-lou",
         "back-to-top-button",
-        "code"
+        "code",
+        "prism"
     ],
     "pluginsConfig": {
         "chapter-fold": {},
         "theme-lou": {
-            "color": "#FF4848", // 主题色
+            "color": "#5F9EA0", // 主题色
             "favicon": "static/favicon.ico", // favicon图标
             "logo": "static/logo.png", // 顶部左侧图标
             "forbidCopy": false, // 页面是否禁止复制
-            "search-placeholder": "搜索", // 搜索框默认文本
+            "search-placeholder": "全局搜索", // 搜索框默认文本
             "book-summary-title": "导航", // 目录标题
             "book-anchor-title": "本章目录标题", // 本章目录标题
             "hide-elements": [".summary .gitbook-link"],
@@ -52,6 +53,14 @@ module.exports = {
         },
         "sitemap": {
             "hostname": "https://tianv5.github.io/docs"
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-okaidia.css"
+            ],
+            "lang": {
+                "flow": "typescript"
+            }
         }
     },
     "pdf":
