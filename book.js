@@ -46,7 +46,7 @@ module.exports = {
             "book-anchor-title": "本章目录标题", // 本章目录标题
             "hide-elements": [".summary .gitbook-link"],
             "imgStyle": {
-                "isCenter": true, // 是否居中(默认为true)
+                "isCenter": false, // 是否居中(默认为true)
                 "isBox": false, // 是否有边框(默认为true)
                 "otherStyle": 'max-width: 80%;', // 图片其他自定义CSS样式
             }
