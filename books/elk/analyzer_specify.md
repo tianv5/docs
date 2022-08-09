@@ -6,12 +6,6 @@
 
  
 
- 
-
-
-
-
-
 
 
 ## Elasticsearch 如何确定索引分析器
@@ -57,16 +51,18 @@ Elasticsearch 通过按顺序检查以下参数来确定要使用的索引分析
 ## 指定分析器的几种方式示例
 
 1. 创建索mappings时,为某个字段指定分析器 [@1](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&15&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
+
 2. 为索引设置默认的分析器. [@2](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&2F&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
 
- 
+   
 
-1. 查询时,查询某字段,指定搜索分析器 [@3](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&4D&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
+3. 查询时,查询某字段,指定搜索分析器 [@3](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&4D&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
 
-(不推荐单独指定,除非充分的测试,否则建议搜索和索引统一分析器)
+   (不推荐单独指定,除非充分的测试,否则建议搜索和索引统一分析器)
 
-1. 创建mappings时,为某个字段指定搜索分析器. [@4](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&69&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
-2. 创建mappings时,为搜索指定默认分析器 [@5](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&87&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
+4. 创建mappings时,为某个字段指定搜索分析器. [@4](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&69&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
+
+5. 创建mappings时,为搜索指定默认分析器 [@5](onenote:#指定分析器&section-id={EE48B4F1-2704-4002-9E1F-F98AB7B85936}&page-id={82C27051-CCC8-4542-A7A9-F5C2800C0433}&object-id={850FB99C-01E7-419C-9875-B8BADD12A3AC}&87&base-path=https://d.docs.live.net/0b67edd7cd914a5c/OneNote笔记/编程笔记/ElasticSearch.one)
 
  
 
