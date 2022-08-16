@@ -80,7 +80,7 @@ POST my_index/_search
 
 
 
-![image-20220803233646105](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220803233646105.png)
+ ![image-20220803233646105](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220803233646105.png)
 
 
 
@@ -169,7 +169,7 @@ POST my_index/_search
 
 返回结果如下
 
-![image-20220803235830496](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220803235830496.png)
+ ![image-20220803235830496](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220803235830496.png)
 
 
 
@@ -257,7 +257,7 @@ POST my_index/_search
 }
 ```
 
-![image-20220804003349321](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220804003349321.png)
+ ![image-20220804003349321](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220804003349321.png)
 
 
 
@@ -275,5 +275,5 @@ POST my_index/_search
 
 `store index 和 enable`
 
-![image-20220804004102873](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220804004102873.png)
+ ![image-20220804004102873](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220804004102873.png)
 
