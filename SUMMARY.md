@@ -11,7 +11,8 @@
         * [指定分析器](books/elk/analyzer_specify.md)    
     * [mapping中字段属性 index,store,copy_to,enable的概念](books/elk/mapping中字段属性index,store,copy_to,enable概念.md)
 
-
+* [Redis](books/redis/README.md)
+    * [Redis知识点整理](books/redis/Redis知识点整理.md)
 
 
 ## 编程语言学习
