@@ -1,0 +1,779 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mapping中字段属性 index,store,copy_to,enable的概念 · 我的文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tianv5">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-lou/lou.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../redis/" />
+    
+    
+    <link rel="prev" href="analyzer_specify.html" />
+    
+
+    </head>
+    <body>
+         
+
+<div class="book">
+  <div class="header-inner">
+    <!-- LOGO -->
+    <div class="logo"></div>
+    <span class="title"></span>
+
+    <!-- Search -->
+    
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+    <!-- Nav -->
+    <ul class="header-nav">
+      <li>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-summary">
+    <div class="book-summary-title">文档目录</div>
+     
+    <nav role="navigation">
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">中间件</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ElasticSearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="analyzer_test.html">
+            
+                <a href="analyzer_test.html">
+            
+                    
+                    分析器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="analyzer_config_buildin.html">
+            
+                <a href="analyzer_config_buildin.html">
+            
+                    
+                    配置内置分析器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="analyzer_custom.html">
+            
+                <a href="analyzer_custom.html">
+            
+                    
+                    自定义分析器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="analyzer_specify.html">
+            
+                <a href="analyzer_specify.html">
+            
+                    
+                    指定分析器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="mapping中字段属性index,store,copy_to,enable概念.html">
+            
+                <a href="mapping中字段属性index,store,copy_to,enable概念.html">
+            
+                    
+                    mapping中字段属性 index,store,copy_to,enable的概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../redis/">
+            
+                <a href="../redis/">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../redis/Redis知识点整理.html">
+            
+                <a href="../redis/Redis知识点整理.html">
+            
+                    
+                    Redis知识点整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编程语言学习</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../python/装饰器.html">
+            
+                <a href="../python/装饰器.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../数据结构与算法/0.大O.html">
+            
+                <a href="../数据结构与算法/0.大O.html">
+            
+                    
+                    数据结构与算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../数据结构与算法/01.线性结构.html">
+            
+                <a href="../数据结构与算法/01.线性结构.html">
+            
+                    
+                    1.线性结构-数组array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../数据结构与算法/02.链式结构-单链表.html">
+            
+                <a href="../数据结构与算法/02.链式结构-单链表.html">
+            
+                    
+                    2.链式结构-单链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../github_pages/">
+            
+                <a href="../github_pages/">
+            
+                    
+                    github pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../github_pages/gitbook构建网站.html">
+            
+                <a href="../github_pages/gitbook构建网站.html">
+            
+                    
+                    gitbook构建网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../github_pages/GitHubActions.html">
+            
+                <a href="../github_pages/GitHubActions.html">
+            
+                    
+                    github Actions自动构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+</nav>
+     
+  </div>
+
+  <!-- Content nav -->
+  <div class="book-anchor">
+    <div class="book-anchor-title"></div>
+
+    <div class="book-anchor-body"></div>
+  </div>
+
+  <div class="book-body">
+    
+    <div class="body-inner">
+       
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >mapping中字段属性 index,store,copy_to,enable的概念</a>
+    </h1>
+</div>
+
+
+
+      <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+          
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+          <section class="normal markdown-section">
+             <h1 id="mapping&#x4E2D;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;-indexstorecopytoenable&#x6982;&#x5FF5;">mapping&#x4E2D;&#x5B57;&#x6BB5;&#x5C5E;&#x6027; index,store,copy_to,enable&#x6982;&#x5FF5;</h1>
+<blockquote>
+<p>&#x53C2;&#x8003;:</p>
+<p><a href="https://elasticsearch.cn/article/6159" target="_blank">&#x5173;&#x4E8E;es&#x6620;&#x5C04;mapping&#x4E2D;&#x7684;enabled&#xFF0C;store&#xFF0C;index&#x53C2;&#x6570;&#x7684;&#x7406;&#x89E3; - Elastic &#x4E2D;&#x6587;&#x793E;&#x533A; (elasticsearch.cn)</a></p>
+</blockquote>
+<h2 id="index">index</h2>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;, &#x6240;&#x6709;&#x5B57;&#x6BB5;&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x5012;&#x6392;&#x7D22;&#x5F15;,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B57;&#x6BB5;index&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;,&#x9ED8;&#x8BA4;<code>true</code></p>
+<p>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x5C06;&#x4E0D;&#x80FD;&#x88AB;&#x67E5;&#x8BE2;,&#x67E5;&#x8BE2;&#x4F1A;&#x62A5;&#x9519;,&#x4F46;&#x662F;&#x4F1A;&#x5B58;&#x88AB;<code>store</code></p>
+<p>&#x5F53;&#x8BE5;&#x6587;&#x6863;&#x88AB;&#x67E5;&#x8BE2;&#x51FA;&#x6765;&#x7684;&#x65F6;&#x5019;,&#x4E5F;&#x4F1A;&#x663E;&#x793A;&#x5728;<code>_source</code>&#x4E2D;</p>
+<pre class="language-"><code class="lang-js"># &#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;<span class="token punctuation">,</span> name&#x548C;title&#x5B57;&#x6BB5;<span class="token punctuation">,</span> &#x5176;&#x4E2D;<span class="token punctuation">,</span> name&#x7684;index<span class="token operator">=</span><span class="token boolean">false</span>
+
+<span class="token constant">PUT</span> my_index
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;index&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+# &#x521B;&#x5EFA;&#x6587;&#x6863;<span class="token punctuation">,</span>id&#x968F;&#x673A;<span class="token punctuation">,</span>
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_doc
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5F20;&#x4E09;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6CD5;&#x5916;&#x72C2;&#x5F92;&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_doc
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x674E;&#x56DB;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</p>
+<pre class="language-"><code class="lang-js"><span class="token constant">POST</span> my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5F20;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;prefix&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6CD5;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p> <img src="https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220803233646105.png" alt="image-20220803233646105"></p>
+<h2 id="store">store</h2>
+<p>&#x9ED8;&#x8BA4;false.</p>
+<p>&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x6570;&#x636E;,&#x7ED3;&#x679C;&#x90FD;&#x5728;hit&#x4E2D;&#x7684;<code>_source</code>&#x5B57;&#x6BB5;&#x5185;.</p>
+<p>&#x4F7F;&#x7528;<code>store=ture</code>&#x540E;,&#x6570;&#x636E;&#x5728;<code>_source&#x4E2D;&#x7684;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;</code>,&#x4E14;&#x4F1A;&#x989D;&#x5916;store&#x4E00;&#x4EFD;&#x5728;<code>fields</code>&#x4E2D;.</p>
+<p>&#x5F53;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x4E2D;&#x52A0;&#x5165;<code>stored_fields</code>&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x4E0D;&#x5728;&#x662F;<code>_source&#x5F62;&#x5F0F;</code>,&#x800C;&#x662F;<code>fields</code>&#x5F62;&#x5F0F;.&#x4E0B;&#x9762;&#x770B;&#x4F8B;&#x5B50;</p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># &#x5220;&#x9664;&#x4E0A;&#x9762;index&#x7684;&#x6D4B;&#x8BD5;&#x7D22;&#x5F15;</span>
+DELETE my_index
+
+<span class="token comment"># &#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x7D22;&#x5F15;</span>
+PUT my_index
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;mappings&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;store&quot;</span><span class="token punctuation">:</span> true
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;title&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;keyword&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment"># &#x63D2;&#x5165;&#x4E24;&#x6761;&#x6570;&#x636E;</span>
+POST my_index<span class="token operator">/</span>_doc<span class="token operator">/</span><span class="token number">1</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&#x5F20;&#x4E09;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;title&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&#x6CD5;&#x5916;&#x72C2;&#x5F92;&quot;</span>
+<span class="token punctuation">}</span>
+
+POST my_index<span class="token operator">/</span>_doc<span class="token operator">/</span><span class="token number">2</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&#x674E;&#x56DB;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;title&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment"># &#x5E73;&#x65F6;&#x90A3;&#x6837;,&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x6CA1;&#x95EE;&#x9898;,&#x7ED3;&#x679C;&#x6CA1;&#x53D8;&#x5316;</span>
+POST my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;query&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;term&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;value&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&#x5F20;&#x4E09;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment"># &#x67E5;&#x8BE2;&#x52A0;&#x5165; stored_fields  * &#x4E5F;&#x53EF;&#x4EE5;&#x5199;name&#x6216;&#x8005;title,&#x6216;&#x8005; [&quot;name&quot;,&quot;title&quot;] </span>
+<span class="token comment"># &#x4F46;&#x662F;title&#x6CA1;&#x6709;&#x503C;,&#x56E0;&#x4E3A;title&#x7684;sotre=false</span>
+POST my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;stored_fields&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;query&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;term&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;title&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;value&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</p>
+<p> <img src="https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220803235830496.png" alt="image-20220803235830496"></p>
+<h2 id="copyto">copy_to</h2>
+<p>&#x4E0A;&#x9762;&#x6765;&#x770B;<code>store</code>&#x6709;&#x70B9;&#x9E21;&#x808B;&#x5440;, &#x914D;&#x5408;<code>copy_to</code>&#x5F88;&#x6709;&#x7528;,&#x56E0;&#x4E3A;<code>copy_to</code>&#x7684;&#x5B57;&#x6BB5;&#x4E0D;&#x88AB;&#x5B58;&#x50A8;&#x5728;<code>_source</code>&#x4E2D;.&#x8FD9;&#x65F6;&#x5019;&#x4F7F;&#x7528;<code>store:true</code>,&#x5C31;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;<code>copy_to</code>&#x7684;&#x5B57;&#x6BB5;&#x4E86;.</p>
+<p>&#x8FD8;&#x6709;&#x4E9B;&#x53E6;&#x5916;&#x7684;&#x89E3;&#x91CA;,&#x53EF;&#x4EE5;&#x770B; <a href="https://blog.csdn.net/m0_45406092/article/details/107631883" target="_blank">ES stored fields&#x4F5C;&#x7528;_&#x4E91;&#x5DDD;&#x4E4B;&#x4E0B;&#x7684;&#x535A;&#x5BA2;-CSDN&#x535A;&#x5BA2;_stored_fields</a></p>
+<blockquote>
+<p>&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6548;&#x7387;,&#x51CF;&#x5C0F;&#x4F20;&#x8F93;&#x4F53;&#x79EF;,&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#xFF0C;&#x4F7F;&#x7528;<code>&quot;_source&quot;: [&quot;&#x5B57;&#x6BB5;1&quot;,&quot;&#x5B57;&#x6BB5;2&quot;]</code></p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x5C06;&quot;&#x5B57;&#x6BB5;1&quot;,&quot;&#x5B57;&#x6BB5;2&quot;&#x8FD9;&#x4E9B;field&#x8BBE;&#x7F6E;&#x6210;store=true</p>
+</blockquote>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B; <code>copy_to</code> &#x548C; <code>store</code></p>
+<blockquote>
+<p>copy_to &#x53EF;&#x4EE5;&#x67E5;&#x9605;&#x5B98;&#x65B9;&#x6587;&#x6863;     <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/copy-to.html" target="_blank">copy_to  | Elasticsearch Guide [8.3] | Elastic</a></p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token constant">DELETE</span> my_index
+
+# &#x5207;&#x8BB0;<span class="token punctuation">,</span> copy_to &#x662F;&#x5C06;&#x5F53;&#x524D;&#x7684;&#x5B57;&#x6BB5;&#x503C;&#x590D;&#x5236;&#x7ED9;&#x76EE;&#x6807;&#x5B57;&#x6BB5;
+# &#x4E0B;&#x9762;&#x4F8B;&#x5B50;<span class="token punctuation">,</span>&#x7406;&#x89E3;&#x4E3A;&#x5C06;&#x5F53;title&#x503C;&#x590D;&#x5236;&#x7ED9;name
+# &#x4E0D;&#x8981;&#x7406;&#x89E3;&#x4E3A; title&#x7684;&#x503C;<span class="token punctuation">,</span>&#x4ECE;name&#x4E2D;copy<span class="token punctuation">,</span> &#x90A3;&#x6837;&#x5E94;&#x8BE5;&#x53EB;copy_from<span class="token punctuation">,</span>&#x54C8;&#x54C8;<span class="token punctuation">,</span>&#x5F00;&#x4E2A;&#x73A9;&#x7B11;<span class="token punctuation">,</span>&#x8FD9;&#x91CC;&#x5C31;&#x641E;&#x9519;&#x4E86;<span class="token punctuation">.</span>&#x8BD5;&#x4E86;&#x597D;&#x51E0;&#x6B21;&#x3002;
+
+<span class="token constant">PUT</span> my_index
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;store&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;copy_to&quot;</span><span class="token operator">:</span> <span class="token string">&quot;name&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+# &#x521B;&#x5EFA;&#x6570;&#x636E;
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_doc<span class="token operator">/</span><span class="token number">1</span>
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5F20;&#x4E09;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6CD5;&#x5916;&#x72C2;&#x5F92;&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_doc<span class="token operator">/</span><span class="token number">2</span>
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">GET</span> my_index<span class="token operator">/</span>_doc<span class="token operator">/</span><span class="token number">1</span>
+<span class="token constant">GET</span> my_index<span class="token operator">/</span>_doc<span class="token operator">/</span><span class="token number">2</span>
+
+# &#x4E0B;&#x9762;&#x4E24;&#x4E2A;<span class="token punctuation">,</span>&#x90FD;&#x80FD;&#x67E5;&#x5230;&#x6570;&#x636E;<span class="token punctuation">,</span>&#x4F46;&#x662F;_source&#x91CC;&#x53EA;&#x5C55;&#x793A;&#x4E86;title<span class="token punctuation">,</span>&#x6CA1;&#x6709;name<span class="token punctuation">.</span>
+# &#x867D;&#x7136;&#x4E0D;&#x73B0;&#x5B9E;<span class="token punctuation">,</span>&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x80FD;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#x7684;<span class="token punctuation">.</span>
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span><span class="token string-property property">&quot;query&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">&quot;term&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">&quot;value&quot;</span><span class="token operator">:</span><span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span><span class="token string-property property">&quot;query&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">&quot;term&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token string-property property">&quot;value&quot;</span><span class="token operator">:</span><span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+
+# copy_to &#x548C; store&#x8054;&#x5408;&#x4F7F;&#x7528;<span class="token punctuation">,</span> &#x5C31;&#x53EF;&#x4EE5;&#x67E5;&#x5230;
+# &#x53EF;&#x4EE5;&#x67E5;&#x5230;name&#x7684;&#x503C;
+# title&#x6362;&#x6210;name&#x4E5F;&#x4E00;&#x6837;
+<span class="token constant">POST</span> my_index<span class="token operator">/</span>_search
+<span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;stored_fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;title&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;term&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x4E9A;&#x6D32;&#x821E;&#x738B;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p> <img src="https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220804003349321.png" alt="image-20220804003349321"></p>
+<h2 id="enable">enable</h2>
+<p>&#x9ED8;&#x8BA4;&#x662F;<code>true</code></p>
+<p><code>enable</code> &#x53EA;&#x9002;&#x7528;&#x4E8E; <code>type</code>&#x4E3A;<code>object</code>&#xFF0C;&#x5F53;&#x7136;,&#x4F7F;&#x7528;enable&#x65F6;&#x5019;,&#x53EF;&#x4EE5;&#x4E0D;&#x8BBE;&#x7F6E;&#x7C7B;&#x578B;,&#x56E0;&#x4E3A;&#x8BBE;&#x7F6E;&#x4E86;enable,&#x5C31;&#x9ED8;&#x8BA4;type&#x4E3A;object&#x4E86;</p>
+<p><code>enable:false</code>&#x8868;&#x793A;&#x5B57;&#x6BB5;&#x4E0D;&#x80FD;&#x67E5;&#x8BE2;,&#x4E5F;&#x4E0D;&#x80FD;&#x88AB;<code>store</code></p>
+<p><code>store index &#x548C; enable</code></p>
+<p> <img src="https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220804004102873.png" alt="image-20220804004102873"></p>
+ 
+          </section>
+          
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+ 
+        </div>
+      </div>
+      
+    </div>
+
+     
+    <a
+      href="analyzer_specify.html"
+      class="
+        navigation navigation-prev
+        
+      "
+      aria-label="Previous page: 指定分析器"
+    >
+      <i class="fa fa-angle-left"></i>
+    </a>
+     
+    <a
+      href="../redis/"
+      class="
+        navigation navigation-next
+        
+      "
+      aria-label="Next page: Redis"
+    >
+      <i class="fa fa-angle-right"></i>
+    </a>
+      
+  </div>
+  <script>
+    function showModal() {
+      document.getElementsByClassName("mask")[0].style.display = "block";
+      document.getElementsByClassName("donate-modal")[0].style.display =
+        "block";
+    }
+    // 切换赞赏码
+    function showDonateImg(num) {
+      let alipay = "";
+      let wxpay = ""
+      if(num){
+        wxpay = "hidden"
+      }else{
+        alipay = "hidden"
+      }
+      document.getElementById("wxpay-code").hidden = wxpay;
+      document.getElementById("alipay-code").hidden = alipay;
+      document.getElementsByName("pay-way")[num].checked = "checked";
+    }
+
+    // 关闭赞赏框
+    function closeDonateModal() {
+      document.getElementsByClassName("mask")[0].style.display = "none";
+      document.getElementsByClassName("donate-modal")[0].style.display = "none";
+    }
+
+    var gitbook = gitbook || [];
+    gitbook.push(function () {
+      gitbook.page.hasChanged({"page":{"title":"mapping中字段属性 index,store,copy_to,enable的概念","level":"2.1.2","depth":2,"next":{"title":"Redis","level":"2.2","depth":1,"path":"books/redis/README.md","ref":"books/redis/README.md","articles":[{"title":"Redis知识点整理","level":"2.2.1","depth":2,"path":"books/redis/Redis知识点整理.md","ref":"books/redis/Redis知识点整理.md","articles":[]}]},"previous":{"title":"指定分析器","level":"2.1.1.3","depth":3,"path":"books/elk/analyzer_specify.md","ref":"books/elk/analyzer_specify.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","-lunr","-search","-sharing","-livereload","search-pro","chapter-fold","sitemap","theme-lou","back-to-top-button","code","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"search-pro":{},"code":{"copyButtons":true},"theme-lou":{"hide-elements":[".summary .gitbook-link"],"color":"#5F9EA0","book-anchor-title":"本章目录标题","forbidCopy":false,"logo":"static/logo.png","book-summary-title":"导航","search-placeholder":"全局搜索","imgStyle":{"isCenter":false,"isBox":false,"otherStyle":"max-width: 80%;"},"favicon":"static/favicon.ico"},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://tianv5.github.io/docs"},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"学习,笔记,编程,代码,博客,文章,github","author":"tianv5","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeColor":"#3884ff","themeLou":{"nav":[{"target":"_blank","url":"https://www.baidu.com","name":"百度"}]}},"title":"我的文档","introduction":{"path":"README.md","title":"前言"},"gitbook":"*","description":"文档"},"file":{"path":"books/elk/mapping中字段属性index,store,copy_to,enable概念.md","mtime":"2022-09-13T14:36:45.308Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-13T14:37:26.550Z"},"basePath":"../..","book":{"language":""}});
+    });
+  </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/lou.js"></script>
+        
+    
+
+    </body>
+</html>
+
